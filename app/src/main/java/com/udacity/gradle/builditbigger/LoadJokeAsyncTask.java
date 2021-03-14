@@ -50,7 +50,6 @@ public class LoadJokeAsyncTask extends AsyncTask<Context, Void, String> {
 
   @Override
   protected void onPostExecute(String s) {
-    Log.d("RAMIRO", s);
     Intent intent = new Intent(mContext, JokeActivity.class);
     intent.putExtra(Intent.EXTRA_TEXT, s);
     mContext.startActivity(intent);
